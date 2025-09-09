@@ -55,16 +55,12 @@ UI → **Admin → Connections → +**
 ## 4) Ejecutar el DAG
 
 1. En la UI de Airflow, **activá** el DAG `blackjack_pipeline`.
-2. Hacé **Trigger** (ejecuta: `health → fetch → download`).
+2. Hacé **Trigger** y completa con los datos de la request deseados. Ver proyecto API-Blackjack para mejor información.
 
 ---
 
 ## 5) Resultado
 
-* En los **logs** de la tarea `download` vas a ver:
-
-  * **Cantidad de manos** obtenidas
-  * **Profit total**
 * Se generan archivos en tu proyecto Astro:
 
   ```
@@ -74,10 +70,3 @@ UI → **Admin → Connections → +**
 
 ---
 
-## ✅ Checklist rápido
-
-* [ ] API arriba en `http://127.0.0.1:8000`
-* [ ] Conexión `blackjack_api` creada en Airflow
-* [ ] DAG `blackjack_pipeline` **ON** y con **Trigger** ejecutado
-
----
